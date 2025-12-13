@@ -10,6 +10,7 @@ namespace Discount.Grpc.Data
             using var dbContext = scope.ServiceProvider.GetRequiredService<DiscountContext>();
             dbContext.Database.MigrateAsync();
 
+          
             return app;
         }
     }
